@@ -8,5 +8,6 @@ namespace _2010107281_ENT.Entities
 {
     public class ServicioTuristico
     {
+        public int ServicioTuristicoId { get; set; }
     }
 }

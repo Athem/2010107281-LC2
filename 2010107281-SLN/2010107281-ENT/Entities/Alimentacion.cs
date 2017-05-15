@@ -8,5 +8,7 @@ namespace _2010107281_ENT.Entities
 {
     public class Alimentacion
     {
+        public int AlimentacionId { get; set; }
+        public string NombreAlimentacion { get; set; }
     }
 }

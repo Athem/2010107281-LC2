@@ -8,5 +8,6 @@ namespace _2010107281_ENT.Entities
 {
     public class ComprobantePago
     {
+        public int ComprobantePagoId { get; set; }
     }
 }

@@ -8,5 +8,6 @@ namespace _2010107281_ENT.Entities
 {
     public class ClasificacionHospedaje
     {
+        public int ClasificacionHospedaje { get; set; }
     }
 }

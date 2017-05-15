@@ -8,5 +8,6 @@ namespace _2010107281_ENT.Entities
 {
     public class TipoTransporte
     {
+        public int TipoTransporteId { get; set; }
     }
 }

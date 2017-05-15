@@ -8,5 +8,6 @@ namespace _2010107281_ENT.Entities
 {
     public class Persona
     {
+        public int PersonaId { get; set; }
     }
 }

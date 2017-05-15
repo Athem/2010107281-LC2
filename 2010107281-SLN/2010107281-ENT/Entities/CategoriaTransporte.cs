@@ -8,5 +8,6 @@ namespace _2010107281_ENT.Entities
 {
     public class CategoriaTransporte
     {
+        public int CategoriaTransporteId { get; set; }
     }
 }
