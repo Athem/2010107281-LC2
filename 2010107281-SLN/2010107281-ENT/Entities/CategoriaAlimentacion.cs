@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _2010107281_ENT
+namespace _2010107281_ENT.Entities
 {
-    public class Class1
+    public class CategoriaAlimentacion
     {
     }
 }

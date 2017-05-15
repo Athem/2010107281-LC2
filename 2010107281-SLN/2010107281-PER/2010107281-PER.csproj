@@ -30,7 +30,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -40,8 +49,57 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="EntityTypeConfigurations\AlimentacionConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\CategoriaAlimentacionConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\CategoriaHospedajeConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\CategoriaTransporteConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\ClasificacionHospedajeConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\ClienteConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\ComprobantePagoConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\EmpleadoConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\HospedajeConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\MedioPagoConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\PaqueteConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\PersonaConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\ServicioHospedajeConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\ServicioTuristicoConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\TipoComprobanteConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\TipoHospedajeConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\TipoTransporteConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\TransporteConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\VentaPaqueteConfiguration.cs" />
+    <Compile Include="PaqueteTuristicoContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\AlimentacionRepository.cs" />
+    <Compile Include="Repositories\CategoriaAlimentacionRepository.cs" />
+    <Compile Include="Repositories\CategoriaHospedajeRepository.cs" />
+    <Compile Include="Repositories\CategoriaTransporteRepository.cs" />
+    <Compile Include="Repositories\ClasificacionHospedajeRepository.cs" />
+    <Compile Include="Repositories\ClienteRepository.cs" />
+    <Compile Include="Repositories\ComprobantePagoRepository.cs" />
+    <Compile Include="Repositories\EmpleadoRepository.cs" />
+    <Compile Include="Repositories\HospedajeRepository.cs" />
+    <Compile Include="Repositories\MedioPagoRepository.cs" />
+    <Compile Include="Repositories\PaqueteRepository.cs" />
+    <Compile Include="Repositories\PersonaRepository.cs" />
+    <Compile Include="Repositories\Repository.cs" />
+    <Compile Include="Repositories\ServicioHospedajeRepository.cs" />
+    <Compile Include="Repositories\ServicioTuristicoRepository.cs" />
+    <Compile Include="Repositories\TipoComprobanteRepository.cs" />
+    <Compile Include="Repositories\TipoHospedajeRepository.cs" />
+    <Compile Include="Repositories\TipoTransporteRepository.cs" />
+    <Compile Include="Repositories\TransporteRepository.cs" />
+    <Compile Include="Repositories\VentaPaqueteRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\2010107281-ENT\2010107281-ENT.csproj">
+      <Project>{AFD3F8E6-0BB3-4CA8-930D-364F978B9B03}</Project>
+      <Name>2010107281-ENT</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
