@@ -9,5 +9,12 @@ namespace _2010107281_ENT.Entities
     public class TipoComprobante
     {
         public int TipoComprobanteId { get; set; }
+
+        public List<ComprobantePago> ComprobantePagos { get; set; }
+
+        public TipoComprobante()
+        {
+            ComprobantePagos = new List<ComprobantePago>();
+        }
     }
 }

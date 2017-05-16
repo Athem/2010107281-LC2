@@ -12,6 +12,6 @@ namespace _2010107281_ENT.Entities
 
         
         public int Hospedaje { get; set; }
-        public Hospedaje Hospedaje { get; set; }
+        public Hospedaje Hospedajes { get; set; }
     }
 }

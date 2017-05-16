@@ -13,5 +13,7 @@ namespace _2010107281_ENT.Entities
         public string ApellidoPaterno { get; set; }
         public string ApellidoMaterno { get; set; }
         public int Dni { get; set; }
+
+
     }
 }

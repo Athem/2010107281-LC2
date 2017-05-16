@@ -19,9 +19,12 @@ namespace _2010107281_ENT.Entities
         }
 
         public int TipoHospedaje { get; set; }
-        public TipoHospedaje TipoHospedaje { get; set; }
+        public TipoHospedaje TipoHospedajes { get; set; }
 
         public int ClasificacionHospedaje { get; set; }
-        public ClasificacionHospedaje ClasificacionHospedaje { get; set; }
+        public ClasificacionHospedaje ClasificacionHospedajes { get; set; }
+
+        public int CategoriaHospedaje { get; set; }
+        public CategoriaHospedaje CategoriaHospedajes { get; set; }
     }
 }
