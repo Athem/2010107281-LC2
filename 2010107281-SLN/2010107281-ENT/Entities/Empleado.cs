@@ -12,7 +12,7 @@ namespace _2010107281_ENT.Entities
 
         public List<VentaPaquete> VentaPaquetes { get; set; }
 
-        public Empleado()
+        public Empleado() : base()
         {
             VentaPaquetes = new List<VentaPaquete>();
         }

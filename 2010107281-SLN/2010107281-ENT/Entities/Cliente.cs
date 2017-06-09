@@ -12,7 +12,11 @@ namespace _2010107281_ENT.Entities
 
         public List<VentaPaquete> VentaPaquetes { get; set; }
 
-        public Cliente()
+        public Cliente(string Nombre, string Apellido, string Correo, int Telefono, string Direccion, int DNI) : base(Nombre, Apellido, Correo, Telefono, Direccion, DNI)
+        {
+
+        }
+        public Cliente() : base()
         {
             VentaPaquetes = new List<VentaPaquete>();
         }
