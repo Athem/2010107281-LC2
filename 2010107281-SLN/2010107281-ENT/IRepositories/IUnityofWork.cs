@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _2010107281_ENT.IRepositories
 {
-    interface IUnityofWork : IDisposable
+    public interface IUnityofWork : IDisposable
     {
         ICategoriaHospedajeRepository CategoriaHospedaje { get; }
         ICategoriaTransporteRepository CategoriaTransporte { get; }
