@@ -6,29 +6,27 @@ using System.Threading.Tasks;
 
 namespace _2010107281_ENT.IRepositories
 {
-    public interface IUnityofWork : IDisposable
+    public interface IUnityOfWork : IDisposable
     {
-        ICategoriaHospedajeRepository CategoriaHospedaje { get; }
-        ICategoriaTransporteRepository CategoriaTransporte { get; }
-        IComprobantePagoRepository ComprobantePago { get; }
-        IAlimentacionRepository Alimentacion { get; }
-        ICalificacionHospedajeRepository CalificacionHospedaje { get; }
-        ICategoriaAlimentacionRepository CategoriaAlimentacion { get; }
-        IClienteRepository Cliente { get; }
-        IEmpleadoRepository Empleado { get; }
-        IHospedajeRepository Hospejade { get; }
-        IMedioPagoRepository MedioPago { get; }
-        IPaqueteRepository Paquete { get; }
-        IServicioHospedajeRepository ServicioHospedaje { get; }
-        IServicioTuristicoRepository ServicioTuristico { get; }
-        ITipoComprobanteRepository TipoComprobante { get; }
-        ITipoHospedajeRepository TipoHospedaje { get; }
-        ITipoTransporteRepository TipoTransporte { get; }
-        ITransporteRepository Transporte { get; }
-        IVentaPaqueteRepository VentaPaquete { get; }
-        IPersonaRepository Persona { get; }
+        IAlimentacionRepository Alimentaciones { get; }
+        ICalificacionHospedajeRepository CalificacionHospedajes { get; }
+        ICategoriaAlimentacionRepository CategoriaAlimentaciones { get; }       
+        ICategoriaHospedajeRepository CategoriaHospedajes { get; }
+        ICategoriaTransporteRepository CategoriaTransportes { get; }
+        IComprobantePagoRepository ComprobantePagos { get; }
+        IHospedajeRepository Hospedajes { get; }
+        IMedioPagoRepository MedioPagos { get; }
+        IPaqueteRepository Paquetes { get; }
+        IPersonaRepository Personas { get; }
+        IServicioHospedajeRepository ServicioHospedajes{ get; }
+        IServicioTuristicoRepository ServicioTuristicos { get; }
+        ITipoComprobanteRepository TipoComprobantes { get; }
+        ITipoHospedajeRepository TipoHospedajes { get; }
+        ITipoTransporteRepository TipoTransportes { get; }
+        ITransporteRepository Transportes { get; }
+        IVentaPaqueteRepository VentaPaquetes { get; }        
 
-        int SaveChange();
+        int SaveChanges();
 
         void StateModedified(object entity);
     }

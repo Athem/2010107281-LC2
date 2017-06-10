@@ -1,0 +1,35 @@
+﻿@model _2010107281_ENT.Entities.CategoriaHospedaje
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CategoriaHospedaje</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Hospedaje.Fecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hospedaje.Fecha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HospedajeId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HospedajeId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CategoriaHospedajeId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

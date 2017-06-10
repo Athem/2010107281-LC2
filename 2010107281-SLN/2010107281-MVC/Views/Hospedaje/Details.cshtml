@@ -1,0 +1,83 @@
+﻿@model _2010107281_ENT.Entities.Hospedaje
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Hospedaje</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Hora)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hora)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Direccion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Direccion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HospedajeId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HospedajeId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoHospedajeId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoHospedajeId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CalificacionHospedajeId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CalificacionHospedajeId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CategoriaHospedajeId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CategoriaHospedajeId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ServicioTuristicoId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

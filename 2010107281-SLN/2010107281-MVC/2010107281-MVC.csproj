@@ -45,6 +45,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
@@ -141,7 +147,25 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AlimentacionController.cs" />
+    <Compile Include="Controllers\CalificacionHospedajeController.cs" />
+    <Compile Include="Controllers\CategoriaAlimentacions1Controller.cs" />
+    <Compile Include="Controllers\CategoriaAlimentacionsController.cs" />
+    <Compile Include="Controllers\CategoriaHospedajeController.cs" />
+    <Compile Include="Controllers\CategoriaTransportesController.cs" />
+    <Compile Include="Controllers\ComprobantePagoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HospedajeController.cs" />
+    <Compile Include="Controllers\MedioPagoController.cs" />
+    <Compile Include="Controllers\PaqueteController.cs" />
+    <Compile Include="Controllers\PersonasController.cs" />
+    <Compile Include="Controllers\ServicioHospedajeController.cs" />
+    <Compile Include="Controllers\ServicioTuristicoController.cs" />
+    <Compile Include="Controllers\TipoComprobanteController.cs" />
+    <Compile Include="Controllers\TipoHospedajeController.cs" />
+    <Compile Include="Controllers\TipoTransporteController.cs" />
+    <Compile Include="Controllers\TransporteController.cs" />
+    <Compile Include="Controllers\VentaPaqueteController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -184,6 +208,96 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Alimentacion\Create.cshtml" />
+    <Content Include="Views\Alimentacion\Delete.cshtml" />
+    <Content Include="Views\Alimentacion\Details.cshtml" />
+    <Content Include="Views\Alimentacion\Edit.cshtml" />
+    <Content Include="Views\Alimentacion\Index.cshtml" />
+    <Content Include="Views\CalificacionHospedaje\Create.cshtml" />
+    <Content Include="Views\CalificacionHospedaje\Delete.cshtml" />
+    <Content Include="Views\CalificacionHospedaje\Details.cshtml" />
+    <Content Include="Views\CalificacionHospedaje\Edit.cshtml" />
+    <Content Include="Views\CalificacionHospedaje\Index.cshtml" />
+    <Content Include="Views\CategoriaAlimentacions\Create.cshtml" />
+    <Content Include="Views\CategoriaAlimentacions\Delete.cshtml" />
+    <Content Include="Views\CategoriaAlimentacions\Details.cshtml" />
+    <Content Include="Views\CategoriaAlimentacions\Edit.cshtml" />
+    <Content Include="Views\CategoriaAlimentacions\Index.cshtml" />
+    <Content Include="Views\CategoriaHospedaje\Create.cshtml" />
+    <Content Include="Views\CategoriaHospedaje\Delete.cshtml" />
+    <Content Include="Views\CategoriaHospedaje\Details.cshtml" />
+    <Content Include="Views\CategoriaHospedaje\Edit.cshtml" />
+    <Content Include="Views\CategoriaHospedaje\Index.cshtml" />
+    <Content Include="Views\CategoriaAlimentacions1\Create.cshtml" />
+    <Content Include="Views\CategoriaAlimentacions1\Delete.cshtml" />
+    <Content Include="Views\CategoriaAlimentacions1\Details.cshtml" />
+    <Content Include="Views\CategoriaAlimentacions1\Edit.cshtml" />
+    <Content Include="Views\CategoriaAlimentacions1\Index.cshtml" />
+    <Content Include="Views\CategoriaTransportes\Create.cshtml" />
+    <Content Include="Views\CategoriaTransportes\Delete.cshtml" />
+    <Content Include="Views\CategoriaTransportes\Details.cshtml" />
+    <Content Include="Views\CategoriaTransportes\Edit.cshtml" />
+    <Content Include="Views\CategoriaTransportes\Index.cshtml" />
+    <Content Include="Views\ComprobantePago\Create.cshtml" />
+    <Content Include="Views\ComprobantePago\Delete.cshtml" />
+    <Content Include="Views\ComprobantePago\Details.cshtml" />
+    <Content Include="Views\ComprobantePago\Edit.cshtml" />
+    <Content Include="Views\ComprobantePago\Index.cshtml" />
+    <Content Include="Views\Hospedaje\Create.cshtml" />
+    <Content Include="Views\Hospedaje\Delete.cshtml" />
+    <Content Include="Views\Hospedaje\Details.cshtml" />
+    <Content Include="Views\Hospedaje\Edit.cshtml" />
+    <Content Include="Views\Hospedaje\Index.cshtml" />
+    <Content Include="Views\MedioPago\Create.cshtml" />
+    <Content Include="Views\MedioPago\Delete.cshtml" />
+    <Content Include="Views\MedioPago\Details.cshtml" />
+    <Content Include="Views\MedioPago\Edit.cshtml" />
+    <Content Include="Views\MedioPago\Index.cshtml" />
+    <Content Include="Views\Paquete\Create.cshtml" />
+    <Content Include="Views\Paquete\Delete.cshtml" />
+    <Content Include="Views\Paquete\Details.cshtml" />
+    <Content Include="Views\Paquete\Edit.cshtml" />
+    <Content Include="Views\Paquete\Index.cshtml" />
+    <Content Include="Views\Personas\Create.cshtml" />
+    <Content Include="Views\Personas\Delete.cshtml" />
+    <Content Include="Views\Personas\Details.cshtml" />
+    <Content Include="Views\Personas\Edit.cshtml" />
+    <Content Include="Views\Personas\Index.cshtml" />
+    <Content Include="Views\ServicioHospedaje\Create.cshtml" />
+    <Content Include="Views\ServicioHospedaje\Delete.cshtml" />
+    <Content Include="Views\ServicioHospedaje\Details.cshtml" />
+    <Content Include="Views\ServicioHospedaje\Edit.cshtml" />
+    <Content Include="Views\ServicioHospedaje\Index.cshtml" />
+    <Content Include="Views\ServicioTuristico\Create.cshtml" />
+    <Content Include="Views\ServicioTuristico\Delete.cshtml" />
+    <Content Include="Views\ServicioTuristico\Details.cshtml" />
+    <Content Include="Views\ServicioTuristico\Edit.cshtml" />
+    <Content Include="Views\ServicioTuristico\Index.cshtml" />
+    <Content Include="Views\TipoComprobante\Create.cshtml" />
+    <Content Include="Views\TipoComprobante\Delete.cshtml" />
+    <Content Include="Views\TipoComprobante\Details.cshtml" />
+    <Content Include="Views\TipoComprobante\Edit.cshtml" />
+    <Content Include="Views\TipoComprobante\Index.cshtml" />
+    <Content Include="Views\TipoHospedaje\Create.cshtml" />
+    <Content Include="Views\TipoHospedaje\Delete.cshtml" />
+    <Content Include="Views\TipoHospedaje\Details.cshtml" />
+    <Content Include="Views\TipoHospedaje\Edit.cshtml" />
+    <Content Include="Views\TipoHospedaje\Index.cshtml" />
+    <Content Include="Views\TipoTransporte\Create.cshtml" />
+    <Content Include="Views\TipoTransporte\Delete.cshtml" />
+    <Content Include="Views\TipoTransporte\Details.cshtml" />
+    <Content Include="Views\TipoTransporte\Edit.cshtml" />
+    <Content Include="Views\TipoTransporte\Index.cshtml" />
+    <Content Include="Views\Transporte\Create.cshtml" />
+    <Content Include="Views\Transporte\Delete.cshtml" />
+    <Content Include="Views\Transporte\Details.cshtml" />
+    <Content Include="Views\Transporte\Edit.cshtml" />
+    <Content Include="Views\Transporte\Index.cshtml" />
+    <Content Include="Views\VentaPaquete\Create.cshtml" />
+    <Content Include="Views\VentaPaquete\Delete.cshtml" />
+    <Content Include="Views\VentaPaquete\Details.cshtml" />
+    <Content Include="Views\VentaPaquete\Edit.cshtml" />
+    <Content Include="Views\VentaPaquete\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
