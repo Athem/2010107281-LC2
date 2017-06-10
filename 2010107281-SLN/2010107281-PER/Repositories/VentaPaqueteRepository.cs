@@ -10,5 +10,10 @@ namespace _2010107281_PER.Repositories
 {
     public class VentaPaqueteRepository : Repository<VentaPaquete>, IVentaPaqueteRepository
     {
+        public VentaPaqueteRepository(PaqueteTuristicoContext context) : base(context)
+        {
+
+        }
     }
 }
+

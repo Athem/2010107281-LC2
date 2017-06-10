@@ -10,5 +10,13 @@ namespace _2010107281_PER.EntityTypeConfigurations
 {
     public class MedioPagoConfiguration : EntityTypeConfiguration<MedioPago>
     {
+        public MedioPagoConfiguration()
+        {
+            //Table Configurations
+            ToTable("MediosPago");
+
+            HasKey(c => c.MedioPagoId);
+
+        }
     }
 }

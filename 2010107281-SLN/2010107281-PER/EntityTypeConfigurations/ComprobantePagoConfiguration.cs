@@ -10,5 +10,16 @@ namespace _2010107281_PER.EntityTypeConfigurations
 {
     public class ComprobantePagoConfiguration : EntityTypeConfiguration<ComprobantePago>
     {
+        public ComprobantePagoConfiguration()
+        {
+            //Table Configurations
+            ToTable("ComprobantesPago");
+
+            HasKey(c => c.ComprobantePagoId);
+
+            //Relations Configurations 
+            HasMany(c => c.TiposComprobante)
+                .WithRequired(c => c.ComprobantePago);
+        }
     }
 }

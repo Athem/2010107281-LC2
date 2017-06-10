@@ -10,5 +10,9 @@ namespace _2010107281_PER.Repositories
 {
     public class TipoComprobanteRepository : Repository<TipoComprobante>, ITipoComprobanteRepository
     {
+        public TipoComprobanteRepository(PaqueteTuristicoContext context) : base(context)
+        {
+
+        }
     }
 }

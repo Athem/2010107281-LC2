@@ -10,5 +10,9 @@ namespace _2010107281_PER.Repositories
 {
     public class PaqueteRepository : Repository<Paquete>, IPaqueteRepository
     {
+        public PaqueteRepository(PaqueteTuristicoContext context) : base(context)
+        {
+
+        }
     }
 }

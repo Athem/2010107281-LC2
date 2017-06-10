@@ -9,5 +9,6 @@ namespace _2010107281_ENT.IRepositories
 {
     public interface ITipoTransporteRepository : IRepository<TipoTransporte>
     {
+        //IEnumerable<TipoTransporte> getTipoporTransporte(Transporte transporte);
     }
 }

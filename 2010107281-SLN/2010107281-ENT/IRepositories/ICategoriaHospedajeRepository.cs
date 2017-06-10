@@ -9,5 +9,6 @@ namespace _2010107281_ENT.IRepositories
 {
     public interface ICategoriaHospedajeRepository : IRepository<CategoriaHospedaje>
     {
+       // IEnumerable<CalificacionHospedaje> getCalificacionporHospedaje(Hospedaje hospedaje);
     }
 }

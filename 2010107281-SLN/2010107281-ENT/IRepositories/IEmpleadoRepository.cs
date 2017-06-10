@@ -9,5 +9,6 @@ namespace _2010107281_ENT.IRepositories
 {
     public interface IEmpleadoRepository : IRepository<Empleado>
     {
+        //IEnumerable<Empleado> getEmpleadoporVenta(VentaPaquete ventapaquete);
     }
 }

@@ -1,5 +1,4 @@
-﻿using _2010107281_ENT;
-using _2010107281_ENT.Entities;
+﻿using _2010107281_ENT.Entities;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity.ModelConfiguration;
@@ -9,14 +8,14 @@ using System.Threading.Tasks;
 
 namespace _2010107281_PER.EntityTypeConfigurations
 {
-    public class EmpleadoConfiguration : EntityTypeConfiguration<Empleado>
+    public class CalificacionHospedajeConfiguration : EntityTypeConfiguration<CalificacionHospedaje>
     {
-        public EmpleadoConfiguration()
+        public CalificacionHospedajeConfiguration()
         {
             //Table Configurations
-            ToTable("Empleados");
+            ToTable("CalificacionHospedaje");
 
-            HasKey(c => c.EmpleadoId);
+            HasKey(c => c.CalificacionHospedajeId);
 
         }
     }

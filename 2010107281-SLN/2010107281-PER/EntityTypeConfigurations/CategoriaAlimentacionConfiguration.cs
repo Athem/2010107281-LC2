@@ -10,5 +10,13 @@ namespace _2010107281_PER.EntityTypeConfigurations
 {
     public class CategoriaAlimentacionConfiguration : EntityTypeConfiguration<CategoriaAlimentacion>
     {
+        public CategoriaAlimentacionConfiguration()
+        {
+            //Table Configurations
+            ToTable("CategoriasAlimentacion");
+
+            HasKey(c => c.CategoriaAlimentacionId);
+
+        }
     }
 }

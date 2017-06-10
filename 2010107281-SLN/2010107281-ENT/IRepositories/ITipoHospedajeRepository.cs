@@ -9,5 +9,6 @@ namespace _2010107281_ENT.IRepositories
 {
     public interface ITipoHospedajeRepository : IRepository<TipoHospedaje>
     {
+        //IEnumerable<TipoHospedaje> getTipoporHospedaje(Hospedaje hospedaje);
     }
 }

@@ -10,5 +10,13 @@ namespace _2010107281_PER.EntityTypeConfigurations
 {
     public class TipoComprobanteConfiguration : EntityTypeConfiguration<TipoComprobante>
     {
+        public TipoComprobanteConfiguration()
+        {
+            //Table Configurations
+            ToTable("TiposComprobante");
+
+            HasKey(c => c.TipoComprobanteId);
+
+        }
     }
 }

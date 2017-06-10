@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 namespace _2010107281_ENT.IRepositories
 {
     public interface IComprobantePagoRepository : IRepository<ComprobantePago>
-    { 
+    {
+        //IEnumerable<ComprobantePago> getComprobanteporTipo(TipoComprobante tipocomprobante);
+        //IEnumerable<ComprobantePago> getComprobanteporVenta(VentaPaquete ventapaquete);
     }
 }

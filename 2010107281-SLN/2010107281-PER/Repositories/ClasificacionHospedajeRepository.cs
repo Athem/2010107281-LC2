@@ -8,7 +8,11 @@ using System.Threading.Tasks;
 
 namespace _2010107281_PER.Repositories
 {
-    public class ClasificacionHospedajeRepository : Repository<ClasificacionHospedaje>, IClasificacionHospedajeRepository
+    public class ClasificacionHospedajeRepository : Repository<CalificacionHospedaje>, ICalificacionHospedajeRepository
     {
+        public ClasificacionHospedajeRepository(PaqueteTuristicoContext context) : base(context)
+        {
+
+        }
     }
 }

@@ -9,5 +9,6 @@ namespace _2010107281_ENT.IRepositories
 {
     public interface IMedioPagoRepository : IRepository<MedioPago>
     {
+       // IEnumerable<MedioPago> getAdministradorporCelular(VentaPaquete ventapaquete);
     }
 }

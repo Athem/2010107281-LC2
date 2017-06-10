@@ -6,25 +6,48 @@ using System.Threading.Tasks;
 
 namespace _2010107281_ENT.Entities
 {
-    public class Hospedaje
+    public class Hospedaje : ServicioTuristico
     {
+        //public int HospedajeId { get; set; }
+
+        //public List<ServicioHospedaje> ServicioHospedajes { get; set; }
+
+        //public Hospedaje() : base()
+        //{
+        //    ServicioHospedajes = new List<ServicioHospedaje>();
+
+        //}
+
+        //public int TipoHospedajeId { get; set; }
+        //public TipoHospedaje TipoHospedajes { get; set; }
+
+        //public int CalificacionHospedajeId { get; set; }
+        //public CalificacionHospedaje ClasificacionHospedajes { get; set; }
+
+        //public int CategoriaHospedajeId { get; set; }
+        //public CategoriaHospedaje CategoriaHospedajes { get; set; }
         public int HospedajeId { get; set; }
+        public string Descripcion { get; set; }
 
-        public List<ServicioHospedaje> ServicioHospedajes { get; set; }
 
-        public Hospedaje()
+        public int TipoHospedajeId { get; set; }
+        public TipoHospedaje TipoHospedaje { get; set; }
+
+        public int CalificacionHospedajeId { get; set; }
+        public CalificacionHospedaje CalificacionHospedaje { get; set; }
+
+        public int CategoriaHospedajeId { get; set; }
+        public CategoriaHospedaje CategoriaHospedaje { get; set; }
+
+        public Hospedaje(string fecha, DateTime hora, string direccion) : base(fecha, hora, direccion)
         {
-            ServicioHospedajes = new List<ServicioHospedaje>();
 
         }
+        public List<ServicioHospedaje> ServiciosHospedaje { get; set; }
 
-        public int TipoHospedaje { get; set; }
-        public TipoHospedaje TipoHospedajes { get; set; }
-
-        public int ClasificacionHospedaje { get; set; }
-        public ClasificacionHospedaje ClasificacionHospedajes { get; set; }
-
-        public int CategoriaHospedaje { get; set; }
-        public CategoriaHospedaje CategoriaHospedajes { get; set; }
+        public Hospedaje() : base()
+        {
+            ServiciosHospedaje = new List<ServicioHospedaje>();
+        }
     }
 }

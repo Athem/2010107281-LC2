@@ -10,5 +10,13 @@ namespace _2010107281_PER.EntityTypeConfigurations
 {
     public class CategoriaTransporteConfiguration : EntityTypeConfiguration<CategoriaTransporte>
     {
+        public CategoriaTransporteConfiguration()
+        {
+            //Table Configurations
+            ToTable("CategoriasTransporte");
+
+            HasKey(c => c.CategoriaTransporteId);
+
+        }
     }
 }

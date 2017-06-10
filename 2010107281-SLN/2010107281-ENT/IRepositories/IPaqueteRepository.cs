@@ -9,5 +9,7 @@ namespace _2010107281_ENT.IRepositories
 {
     public interface IPaqueteRepository : IRepository<Paquete>
     {
+        //IEnumerable<Paquete> getPaqueteporVenta(VentaPaquete ventapaquete);
+        //IEnumerable<Paquete> getPaqueteporServicio(ServicioTuristico servicioturisco);
     }
 }

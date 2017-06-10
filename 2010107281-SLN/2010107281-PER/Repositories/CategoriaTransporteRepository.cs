@@ -10,5 +10,9 @@ namespace _2010107281_PER.Repositories
 {
     public class CategoriaTransporteRepository : Repository<CategoriaTransporte>, ICategoriaTransporteRepository
     {
+        public CategoriaTransporteRepository(PaqueteTuristicoContext context) : base(context)
+        {
+
+        }
     }
 }

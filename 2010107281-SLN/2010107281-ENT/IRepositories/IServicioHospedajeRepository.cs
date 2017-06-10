@@ -9,5 +9,6 @@ namespace _2010107281_ENT.IRepositories
 {
     public interface IServicioHospedajeRepository : IRepository<ServicioHospedaje>
     {
+        //IEnumerable<ServicioHospedaje> getServicioporHospedaje(Hospedaje hospedaje);
     }
 }

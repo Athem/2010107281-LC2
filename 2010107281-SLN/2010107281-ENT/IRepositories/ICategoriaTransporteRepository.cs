@@ -9,5 +9,6 @@ namespace _2010107281_ENT.IRepositories
 {
     public interface ICategoriaTransporteRepository : IRepository<CategoriaTransporte>
     {
+        //IEnumerable<CategoriaTransporte> getCateoriraporTransporte(Transporte trasnporte);
     }
 }

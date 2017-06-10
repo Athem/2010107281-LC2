@@ -10,5 +10,9 @@ namespace _2010107281_PER.Repositories
 {
     public class PersonaRepository : Repository<Persona>, IPersonaRepository
     {
+        public PersonaRepository(PaqueteTuristicoContext context) : base(context)
+        {
+
+        }
     }
 }

@@ -9,5 +9,6 @@ namespace _2010107281_ENT.IRepositories
 {
     public interface ICategoriaAlimentacionRepository : IRepository<CategoriaAlimentacion>
     {
+        //IEnumerable<CategoriaAlimentacion> getCategoriaporAlimentacion(Alimentacion alimentacion);
     }
 }

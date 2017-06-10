@@ -10,5 +10,9 @@ namespace _2010107281_PER.Repositories
 {
     public class ServicioTuristicoRepository : Repository<ServicioTuristico>, IServicioTuristicoRepository
     {
+        public ServicioTuristicoRepository(PaqueteTuristicoContext context) : base(context)
+        {
+
+        }
     }
 }

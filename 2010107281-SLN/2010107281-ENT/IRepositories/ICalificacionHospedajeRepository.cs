@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace _2010107281_ENT.IRepositories
 {
-    public interface IClasificacionHospedajeRepository : IRepository<ClasificacionHospedaje>
+    public interface ICalificacionHospedajeRepository : IRepository<CalificacionHospedaje>
     {
+        //IEnumerable<CalificacionHospedaje> getCalificacionporHospedaje(Hospedaje hospedaje);
     }
 }

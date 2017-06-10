@@ -8,10 +8,16 @@ namespace _2010107281_ENT.Entities
 {
     public class ServicioHospedaje
     {
+        //public int ServicioHospedajeId { get; set; }
+
+        //public int Hospedaje { get; set; }
+        //public Hospedaje Hospedajes { get; set; }
+
         public int ServicioHospedajeId { get; set; }
 
-        public int Hospedaje { get; set; }
-        public Hospedaje Hospedajes { get; set; }
-        
+
+        public int HospedajeId { get; set; }
+        public Hospedaje Hospedaje { get; set; }
+
     }
 }

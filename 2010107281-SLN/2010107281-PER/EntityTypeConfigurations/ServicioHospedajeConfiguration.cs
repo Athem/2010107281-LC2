@@ -10,5 +10,13 @@ namespace _2010107281_PER.EntityTypeConfigurations
 {
     public class ServicioHospedajeConfiguration : EntityTypeConfiguration<ServicioHospedaje>
     {
+        public ServicioHospedajeConfiguration()
+        {
+            //Table Configurations
+            ToTable("ServiciosHospedaje");
+
+            HasKey(c => c.ServicioHospedajeId);
+
+        }
     }
 }

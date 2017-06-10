@@ -10,5 +10,9 @@ namespace _2010107281_PER.Repositories
 {
     public class MedioPagoRepository : Repository<MedioPago>, IMedioPagoRepository
     {
+        public MedioPagoRepository(PaqueteTuristicoContext context) : base(context)
+        {
+
+        }
     }
 }

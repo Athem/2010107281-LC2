@@ -10,5 +10,9 @@ namespace _2010107281_PER.Repositories
 {
     public class AlimentacionRepository : Repository<Alimentacion>, IAlimentacionRepository
     {
+        public AlimentacionRepository(PaqueteTuristicoContext context) : base(context)
+        {
+
+        }
     }
 }

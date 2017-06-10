@@ -12,14 +12,28 @@ namespace _2010107281_PER.EntityTypeConfigurations
     {
         public AlimentacionConfiguration()
         {
+            //ToTable("Alimentacion");
+            //Property(v => v.AlimentacionId)
+            //.IsRequired();
+
+            //HasRequired(v => v.CategoriasAlimentaciones)
+            //    .WithMany(g => g.Alimentaciones)
+            //    .HasForeignKey(v => v.CategoriaAlimentacionId);
+            
+            //Table Configurations
             ToTable("Alimentacion");
-            Property(v => v.AlimentacionId)
-            .IsRequired();
 
-            HasRequired(v => v.CategoriasAlimentaciones)
-                .WithMany(g => g.Alimentaciones)
-                .HasForeignKey(v => v.CategoriaAlimentacionId);
+            HasKey(c => c.AlimentacionId);
 
+            //Relations Configurations
+            HasMany(c => c.CategoriasAlimentacion)
+                .WithMany(c => c.Alimentacion)
+                .Map(m =>
+                {
+                    m.ToTable("AlimentacionCategoriasAlimento");
+                    m.MapLeftKey("AlimentacionId");
+                    m.MapRightKey("AlimentaionCategoriaId");
+                });
         }
     }
 }

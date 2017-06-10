@@ -10,5 +10,9 @@ namespace _2010107281_PER.Repositories
 { 
     public class TipoHospedajeRepository : Repository<TipoHospedaje>, ITipoHospedajeRepository
     {
+        public TipoHospedajeRepository(PaqueteTuristicoContext context) : base(context)
+        {
+
+        }
     }
 }

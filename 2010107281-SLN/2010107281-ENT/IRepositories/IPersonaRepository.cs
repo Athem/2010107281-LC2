@@ -9,5 +9,6 @@ namespace _2010107281_ENT.IRepositories
 {
     public interface IPersonaRepository : IRepository<Persona>
     {
+        //IEnumerable<Persona> getAdministradorporCelular(Persona persona);
     }
 }
