@@ -44,7 +44,6 @@ namespace _2010107281_PER.Repositories
         {
             //throw new NotImplementedException();
             return _Context.Set<TEntity>().ToList();
-
         }
 
         //IEnumerator<TEntity> IRepository<TEntity>.Find(Expression<Func<TEntity, bool>> predicate)
@@ -66,6 +65,6 @@ namespace _2010107281_PER.Repositories
         {
             //throw new NotImplementedException();
             _Context.Set<TEntity>().AddRange(entities);
-        }
+        }                
     }
 }

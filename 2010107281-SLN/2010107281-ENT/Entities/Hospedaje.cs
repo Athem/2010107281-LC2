@@ -8,28 +8,8 @@ namespace _2010107281_ENT.Entities
 {
     public class Hospedaje : ServicioTuristico
     {
-        //public int HospedajeId { get; set; }
-
-        //public List<ServicioHospedaje> ServicioHospedajes { get; set; }
-
-        //public Hospedaje() : base()
-        //{
-        //    ServicioHospedajes = new List<ServicioHospedaje>();
-
-        //}
-
-        //public int TipoHospedajeId { get; set; }
-        //public TipoHospedaje TipoHospedajes { get; set; }
-
-        //public int CalificacionHospedajeId { get; set; }
-        //public CalificacionHospedaje ClasificacionHospedajes { get; set; }
-
-        //public int CategoriaHospedajeId { get; set; }
-        //public CategoriaHospedaje CategoriaHospedajes { get; set; }
         public int HospedajeId { get; set; }
         public string Descripcion { get; set; }
-
-
         public int TipoHospedajeId { get; set; }
         public TipoHospedaje TipoHospedaje { get; set; }
 

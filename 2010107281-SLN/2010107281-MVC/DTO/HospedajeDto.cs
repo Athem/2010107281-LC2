@@ -7,7 +7,9 @@ namespace _2010107281_MVC.DTO
 {
     public class HospedajeDto
     {
-        public int EmpleadoId { get; set; }
-        public int EmpleadoSueldo { get; set; }
+        public int HospedajeId { get; set; }
+        public string Descripcion { get; set; }
+        public int TipoHospedajeId { get; set; }
+        public TipoHospedajeDto TipoHospedaje { get; set; }
     }
 }

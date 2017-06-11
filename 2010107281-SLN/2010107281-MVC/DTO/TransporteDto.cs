@@ -5,10 +5,9 @@ using System.Web;
 
 namespace _2010107281_MVC.DTO
 {
-    public class CategoriaTransporteDto
+    public class TransporteDto
     {
-        public int CategoriaTransporteId { get; set; }
         public int TransporteId { get; set; }
-        public TransporteDto Transporte { get; set; }
+        public string DescripcionTransporte { get; set; }
     }
 }

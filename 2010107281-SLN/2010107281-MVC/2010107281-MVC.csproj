@@ -181,6 +181,7 @@
     <Compile Include="DTO\TipoComprobanteDto.cs" />
     <Compile Include="DTO\TipoHospedajeDto.cs" />
     <Compile Include="DTO\TipoTransporteDto.cs" />
+    <Compile Include="DTO\TransporteDto.cs" />
     <Compile Include="DTO\VentaPaqueteDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

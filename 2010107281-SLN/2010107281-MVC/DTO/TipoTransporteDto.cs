@@ -8,5 +8,7 @@ namespace _2010107281_MVC.DTO
     public class TipoTransporteDto
     {
         public int TipoTransporteId { get; set; }
+        public int TransporteId { get; set; }
+        public TransporteDto Transporte { get; set; }
     }
 }
