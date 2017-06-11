@@ -166,6 +166,22 @@
     <Compile Include="Controllers\TipoTransporteController.cs" />
     <Compile Include="Controllers\TransporteController.cs" />
     <Compile Include="Controllers\VentaPaqueteController.cs" />
+    <Compile Include="DTO\AlimentoDto.cs" />
+    <Compile Include="DTO\CalificacionHospedajeDto.cs" />
+    <Compile Include="DTO\CategoriaAlimentacionDto.cs" />
+    <Compile Include="DTO\CategoriaHospedajeDto.cs" />
+    <Compile Include="DTO\CategoriaTransporteDto.cs" />
+    <Compile Include="DTO\ComprobantePagoDto.cs" />
+    <Compile Include="DTO\HospedajeDto.cs" />
+    <Compile Include="DTO\MedioPagoDto.cs" />
+    <Compile Include="DTO\PaqueteDto.cs" />
+    <Compile Include="DTO\PersonaDto.cs" />
+    <Compile Include="DTO\ServicioHospedajeDto.cs" />
+    <Compile Include="DTO\ServicioTuristicoDto.cs" />
+    <Compile Include="DTO\TipoComprobanteDto.cs" />
+    <Compile Include="DTO\TipoHospedajeDto.cs" />
+    <Compile Include="DTO\TipoTransporteDto.cs" />
+    <Compile Include="DTO\VentaPaqueteDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
